@@ -6,7 +6,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
-
 import java.io.File;
 
 public class View extends Pane {
@@ -22,10 +21,10 @@ public class View extends Pane {
         );
         File file = fileChooser.showOpenDialog(null);
         ImageView originalView = new ImageView(file.toURI().toString());
-        double heigh = originalView.getImage().getHeight();
+        double height = originalView.getImage().getHeight();
         double width = originalView.getImage().getWidth();
 
-        setPrefSize(width * 2, heigh+50);
+        setPrefSize(width * 2, height+50);
 
         ImageView modifiedView = new ImageView();
         modifiedView.setTranslateX(width);
@@ -45,7 +44,7 @@ public class View extends Pane {
 
         Button btnDecode = new Button("DEKODUJ");
         btnDecode.setPrefWidth(100);
-        btnDecode.setTranslateX(width - 100);
+        btnDecode.setTranslateX(width*2 -100);
         btnDecode.setTranslateY(width);
         btnDecode.setOnAction(e -> controller.onDecode());
 
