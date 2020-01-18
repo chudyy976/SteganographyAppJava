@@ -3,9 +3,11 @@ package steg;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.stage.FileChooser;
+
+import java.io.File;
 
 public class View extends Pane {
 
@@ -13,18 +15,24 @@ public class View extends Pane {
 
     public View(Controller controller) {
         this.controller = controller;
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Image Files (*.jpg, *.png)", "*.png", "*.jpg"),
+                new FileChooser.ExtensionFilter("All Files (*.*)", "*.*")
+        );
+        File file = fileChooser.showOpenDialog(null);
+        ImageView originalView = new ImageView(file.toURI().toString());
+        double heigh = originalView.getImage().getHeight();
+        double width = originalView.getImage().getWidth();
 
-        setPrefSize(603 * 2, 650);
-
-        Image image = new Image("http://www.pwsz.krosno.pl/gfx/pwszkrosno/userfiles/admin/bannery/20-lat-www.jpg");
-        ImageView originalView = new ImageView(image);
+        setPrefSize(width * 2, heigh+50);
 
         ImageView modifiedView = new ImageView();
-        modifiedView.setTranslateX(603);
+        modifiedView.setTranslateX(width);
 
         TextField field = new TextField();
         field.setPromptText("Wprowadz wiadomosc: ");
-        field.setTranslateY(609);
+        field.setTranslateY(width);
         field.setPrefWidth(200);
         field.setOnAction(e -> {
             if (field.getText() == null | field.getText().trim().isEmpty()) {
@@ -37,8 +45,8 @@ public class View extends Pane {
 
         Button btnDecode = new Button("DEKODUJ");
         btnDecode.setPrefWidth(100);
-        btnDecode.setTranslateX(503);
-        btnDecode.setTranslateY(609);
+        btnDecode.setTranslateX(width - 100);
+        btnDecode.setTranslateY(width);
         btnDecode.setOnAction(e -> controller.onDecode());
 
         controller.injectUI(originalView, modifiedView, field);
