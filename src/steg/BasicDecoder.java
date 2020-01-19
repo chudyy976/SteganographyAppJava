@@ -20,7 +20,6 @@ public class BasicDecoder implements Decoder {
                     String binary = Integer.toBinaryString(pair.getValue());
                     bits[pair.getKey()] = binary.charAt(binary.length() - 1) == '1';
                 });
-
         // decode length
         int length = 0;
         for (int i = 0; i < 32; i++) {
@@ -28,7 +27,6 @@ public class BasicDecoder implements Decoder {
                 length |= (1 << (31 - i));
             }
         }
-
         byte[] data = new byte[length];
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < 8; j++) {
@@ -37,7 +35,5 @@ public class BasicDecoder implements Decoder {
                 }
             }
         }
-
         return new String(data);
-    }
-}
+    }}

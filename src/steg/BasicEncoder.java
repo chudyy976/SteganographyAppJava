@@ -27,15 +27,12 @@ public class BasicEncoder implements Encoder {
 
                     writer.setArgb(x, y, pair.getValue());
                 });
-
         return copy;
     }
 
     private boolean[] encode(String message) {
         byte[] data = message.getBytes();
 
-        // int = 32 bits
-        // byte = 8 bits
         boolean[] bits = new boolean[32 + data.length * 8];
 
         // encode length
@@ -48,7 +45,6 @@ public class BasicEncoder implements Encoder {
             bits[i] = binary.charAt(i) == '1';
         }
 
-        // [7, 6, 5 ... 0]
         // encode message
         for (int i = 0; i < data.length; i++) {
             byte b = data[i];
@@ -57,7 +53,5 @@ public class BasicEncoder implements Encoder {
                 bits[32 + i*8 + j] = ((b >> (7 - j)) & 1) == 1;
             }
         }
-
         return bits;
-    }
-}
+    }}
