@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/steg/BasicDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/steg/BasicDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/steg/BasicEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/steg/BasicEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSteganography/steg/BasicDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSteganography/steg/BasicDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSteganography/steg/BasicEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSteganography/steg/BasicEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/steg/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/steg/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/steg/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/steg/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,16 +85,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -212,22 +215,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579360982752" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579364972352">
+    <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579960140077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579364972352" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579364972352">
+    <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579960140077" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579967391349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579364972352" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579364972351">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579967391349" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579967391349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579364972351" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579364972352">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579967391349" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579967391349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579364972352" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579967391349" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579967391349">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579967391349" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579960176464">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579960176464" />
+    <state x="342" y="221" key="new project wizard" timestamp="1579693176418">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="221" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579693176418" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579363132212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
